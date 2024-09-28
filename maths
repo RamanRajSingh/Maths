@@ -1,1 +1,12 @@
+print('''Enter the following keywords or numbers corresponding to your requirement:
+1. Algebra
+2. Arithmatic
+3. Geometry''')
+operate=input()
+if operate in ['1','Algebra']:
+    from Maths.Algebra import Algebra
+if operate in ['2','Arithmatic']:
+    from Arithmatic import Arithmatic
+if operate in ['3','Geometry']:
+    from Geometry import Geometry
 
