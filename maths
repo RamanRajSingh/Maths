@@ -4,9 +4,40 @@ print('''Enter the following keywords or numbers corresponding to your requireme
 3. Geometry''')
 operate=input()
 if operate in ['1','Algebra']:
-    from Maths.Algebra import Algebra
-if operate in ['2','Arithmatic']:
-    from Arithmatic import Arithmatic
-if operate in ['3','Geometry']:
-    from Geometry import Geometry
+    import sys
+    import os
 
+    # Get the absolute path of the directory containing Algebra.py
+    algebra_dir = r'C:\Users\hp\AppData\Local\Programs\python\Python311\Maths\Algebra'
+
+    # Add the path to sys.path
+    sys.path.append(algebra_dir)
+
+    # Now you can import Algebra
+    import Algebra
+
+
+if operate in ['2','Arithmatic']:
+    import sys
+    import os
+
+    # Get the absolute path of the directory containing Arithmatic.py
+    arithmatic_dir = r'C:\Users\hp\AppData\Local\Programs\python\Python311\Maths\Arithmatic'
+
+    # Add the path to sys.path
+    sys.path.append(arithmatic_dir)
+
+    # Now you can import Aritmatic
+    import Arithmatic
+if operate in ['3','Geometry']:
+    import sys
+    import os
+
+    # Get the absolute path of the directory containing Geometry.py
+    geometry_dir = r'C:\Users\hp\AppData\Local\Programs\python\Python311\Maths\Geometry'
+
+    # Add the path to sys.path
+    sys.path.append(geometry_dir)
+
+    # Now you can import Geometry
+    import Geometry
