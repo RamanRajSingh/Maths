@@ -1,7 +1,7 @@
 print('''If you want to perform following operations then enter their corresponding value:
 1. Two dimensional problem(related to 2d shapes)
 2. Three dimensional problem(related to 3d shapes)
-3. To go back to main list''')
+0. To go back to main list''')
 n=input()
 if n in ['1','2d','2D']:
     import sys
@@ -28,7 +28,7 @@ elif n in ['2','3d','3D']:
     # Now you can import three_d.py
     import three_d
 #Routes the user to Maths.py 
-elif n == '3':
+elif n == '0':
     import sys
     import os
 
