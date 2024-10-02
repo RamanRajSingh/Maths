@@ -5,7 +5,7 @@ def square():
     2.Perimeter
     3,Side
     4,Diagonal
-    5.To go back to previous menu''')
+    0.To go back to previous menu''')
     value=input()
     if value in ['1','Area','area','AREA']:
         try:
@@ -62,12 +62,13 @@ def square():
                 square()
         else:
             square()
-    elif value=='5':
+    elif value=='0':
         import sys
         import os
         twod_dir=r'C:/Users/hp/Appdata/Local/Programs/python/Python311/Maths/Geometry/two_d_Shapes'
         sys.path.append(twod_dir)
-        import two_d
+        import two_d as t
+        t.two_d()
     else:
         print('Enter What`s available in the list')
         square()
