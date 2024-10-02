@@ -46,7 +46,8 @@ def rectangle():
         import os
         twod_dir=r'C:/Users/hp/Appdata/Local/Programs/python/Python311/Maths/Geometry/two_d_Shapes'
         sys.path.append(twod_dir)
-        import two_d
+        import two_d as t
+        t.two_d()
     else:
         print('Enter What`s available in the list')
         rectangle()
