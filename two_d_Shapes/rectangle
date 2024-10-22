@@ -1,0 +1,54 @@
+#for rectangle
+import math as m
+def rectangle():
+    print('''\nTo get parameter of a rectangle out of following, enter corresponding values:
+    1.Area
+    2.Perimeter
+    3,Diagonal
+    4.Conversion from diagonal to length or breadth
+    0.To go back to previous menu''')
+    value=input()
+    if value in ['1','Area','area','AREA']:
+        try:
+            length=float(input('Enter the length of the rectangle:'))
+            breadth=float(input('Enter the breadth of the rectangle:'))
+            print(f'Area of rectangle with length {length} and breadth {breadth} is {length * breadth}')
+            rectangle()
+        except:
+            rectangle()
+    elif value=='2':
+        try:
+            length=float(input('Enter the length of the rectangle:'))
+            breadth=float(input('Enter the breadth of the rectangle:'))
+            print(f'Perimeter of rectangle with length {length} and breadth {breadth} is {2*(length+breadth)}')
+            rectangle()
+        except:
+            rectangle()
+    elif value in ['3','diagonal','Diagonal','DIAGONAL']:
+        length=float(input('Enter the length of the rectangle:'))
+        breadth=float(input('Enter the breadth of the rectangle:'))
+        print(f'Diagonal of rectangle with length {length} and breadth {breadth} is {pow(pow(length,2) + pow(breadth,2),0.5)}')
+        rectangle()
+    elif value=='4':
+        operation=input('Do you want to find length or width, please enter your choice:')
+        if operation in ['breadth','Breadth','BREADTH']:
+            length=float(input('Enter the length of the rectangle:'))
+            diagonal=float(input('Enter the length of the diagonal:'))
+            print(f'Breadth of the rectangle with length {length} and  diagonal {diagonal} is {pow(pow(diagonal,2)-pow(length,2),0.5)}')
+            rectangle()
+        elif operation in ['length','Length','LENGTH']:
+            breadth=float(input('Enter the breadth of the rectangle:'))
+            diagonal=float(input('Enter the length of the diagonal:'))
+            print(f'Length of the rectangle with breadth {breadth} and  diagonal {diagonal} is {pow(pow(diagonal,2)-pow(breadth,2),0.5)}')
+            rectangle()
+    elif value=='0':
+        import sys
+        import os
+        twod_dir=r'C:/Users/hp/Appdata/Local/Programs/python/Python311/Maths/Geometry/two_d_Shapes'
+        sys.path.append(twod_dir)
+        import two_d as t
+        t.two_d()
+    else:
+        print('Enter What`s available in the list')
+        rectangle()
+rectangle()

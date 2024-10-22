@@ -1,0 +1,29 @@
+def two_d():
+    value=input('''For 2-D shapes listed below enter coresponding values related to your shape of interest:
+    1. Square
+    2. Rectangle
+    3. Circle
+    4. Triangle
+    5. Parallelogram
+    6. Rhombus
+    0. Return to previous menu\n''')
+    if value in ['1','Square']:
+        import square as sq
+        sq.square()
+    elif value in ['2','Rectangle']:
+        import rectangle
+    elif value in ['3','Circle']:
+        import circle
+    elif value in ['4','Triangle']:
+        import triangle
+    elif value in ['5','Parallelogram']:
+        import parallelogram
+    elif value in ['6','Rhombus']:
+        import rhombus
+    elif value in ['0','back']:
+        import sys
+        import os
+        geometry=r'C:\Users\hp\AppData\Local\Programs\python\Python311\Maths\Geometry'
+        sys.path.append(geometry)
+        import Geometry
+two_d()
