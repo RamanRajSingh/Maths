@@ -1,4 +1,4 @@
-# This is algebra
+# Algebra
 This branch of the project deals with algebraic equations including:
 <ol>
   <li>Quadratic Equations</li>
