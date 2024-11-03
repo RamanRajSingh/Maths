@@ -10,7 +10,7 @@ This has the following modules:
   <li>Geometry</li>
 </ol>
 <ol>
-  <li># Algebra</li>
+  <li> # Algebra</li>
   <p>
 This module of the project deals with algebraic equations including:
 <ol>
